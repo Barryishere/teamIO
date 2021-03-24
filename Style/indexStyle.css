@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    white-space: normal;
+    word-wrap: break-word;
+    background-color: #dee2e6;
+}
+
+#navigation {
+    width: 25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    border-right: 1px #eee solid;
+    background-color: whitesmoke;
+    box-shadow: 16px 0px 42px -8px rgba(0, 0, 0, 0.2);
+}
+
+.navItem {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#portrait {
+    width: 18rem;
+    height: 12rem;
+    margin-top: 2rem;
+    box-shadow: 0px 16px 24px -8px rgba(0, 0, 0, 0.2);
+}
+
+#name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+#introduction {
+    font-weight: 200;
+    margin-top: 1rem;
+    max-height: 18rem;
+}
+
+.navigations {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.anchor {
+    font-weight: 700;
+    color: #28C76F;
+    font-size: 1.5rem;
+    width: fit-content;
+    transition: all 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem 0.2rem 0;
+}
+
+.anchor:hover {
+    color: #2feb83;
+    font-size: 1.8rem;
+}
+
+.elasticable {
+    flex: 1 0 auto;
+}
+
+.contact {
+    bottom: 0;
+    flex: 0 0 auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactMe {
+    margin: 0 0.5rem 0 0;
+    text-decoration: none;
+}
+
+.contactIcon {
+    fill: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    transition: all 0.2s;
+}
+
+.icon1:hover {
+    fill: #12B7F5;
+    transform: scale(1.2, 1.2);
+}
+
+.icon2:hover {
+    fill: #2782d7;
+    transform: scale(1.2, 1.2);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.mainItemContainer {
+    min-width: 20rem;
+    border-radius: 0.5rem;
+    margin: 2rem 3rem 3rem 3rem;
+    background-color: whitesmoke;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    box-shadow: 0 8px 42px -8px rgba(0, 0, 0, 0.2);
+}
+
+.megaTitle {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bolder;
+    margin: 0 0 0.5rem 0;
+}
+
+.subItemContainer {
+    border-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.newsContainer {
+    overflow-y: auto;
+    max-height: 15rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsContent {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0.5rem 0 0 0;
+    color: #333333 !important;
+}
+
+.newsDate {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 16px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+    background-color: #0396FF;
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+}
+
+.subItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.introContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-basis: auto;
+    margin: 0 1rem 0 0;
+    flex-direction: column;
+}
+
+.paperTitle {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0.5rem 0 0 0;
+    color: #333333 !important;
+}
+
+.langAnnotation {
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 16px;
+    border-radius: 5px;
+    width: fit-content;
+    display: inline-block;
+    background-color: #47c27e;
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+
+    /* edge compatibility */
+    display: table;
+}
+
+.info {
+    font-size: 13px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 1.5rem;
+    display: inline-block;
+    border-color: #28C76F;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.buttonContainer {
+    margin: 1rem;
+    text-align: center;
+}
+
+.repoButton {
+    width: 8rem;
+    margin: 0 auto;
+    line-height: 2rem;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem 0 0.2rem 0;
+    background-color: #1f6bcd;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.repoButton:hover {
+    transform: scale(1.2, 1.2);
+    background-color: #2f7bfd;
+}
+
+.buttonIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    margin: 0 0.3rem 0.3rem 0;
+}
+
+.disabledButton {
+    pointer-events: none;
+    background-color: #7e7e7e;
+}
+
+#popupContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center; 
+    justify-content: center;
+    background-color: rgba(00, 00, 00, 0.3);
+    /* background-image: radial-gradient(circle, transparent, black); */
+}
+
+#popContent {
+    overflow: hidden;
+    border-radius: 5%;
+    background-color: whitesmoke;
+    box-shadow: 0 8px 42px -8px rgba(0, 0, 0, 0.9);
+}
+
+.QRCode {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.qqID {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333 !important;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#closeButton {
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #1f6bcd;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s;
+    padding: 1rem 0 1rem 0;
+}
+
+#closeButton:hover {
+    background-color: #2f7bfd;
+}
